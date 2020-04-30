@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpro/soap-client": "^0.7.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "IMS\\": "src/"
+        }
+    },
+    "require-dev": {
+        "laminas/laminas-code": "^3.1.0"
+    }
+}

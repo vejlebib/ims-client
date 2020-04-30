@@ -1,0 +1,85 @@
+<?php
+
+namespace IMS\Query\Type;
+
+class GetBibrecLifecycleSimulation
+{
+
+    /**
+     * @var \IMS\Query\Type\TokenType
+     */
+    private $Token = null;
+
+    /**
+     * @var \IMS\Query\Type\BibliographicRecordIdType
+     */
+    private $BibliographicRecordId = null;
+
+    /**
+     * @var \IMS\Query\Type\BibliographicRecordKeyType
+     */
+    private $BibliographicRecordKey = null;
+
+    /**
+     * @return \IMS\Query\Type\TokenType
+     */
+    public function getToken()
+    {
+        return $this->Token;
+    }
+
+    /**
+     * @param \IMS\Query\Type\TokenType $Token
+     * @return GetBibrecLifecycleSimulation
+     */
+    public function withToken($Token)
+    {
+        $new = clone $this;
+        $new->Token = $Token;
+
+        return $new;
+    }
+
+    /**
+     * @return \IMS\Query\Type\BibliographicRecordIdType
+     */
+    public function getBibliographicRecordId()
+    {
+        return $this->BibliographicRecordId;
+    }
+
+    /**
+     * @param \IMS\Query\Type\BibliographicRecordIdType $BibliographicRecordId
+     * @return GetBibrecLifecycleSimulation
+     */
+    public function withBibliographicRecordId($BibliographicRecordId)
+    {
+        $new = clone $this;
+        $new->BibliographicRecordId = $BibliographicRecordId;
+
+        return $new;
+    }
+
+    /**
+     * @return \IMS\Query\Type\BibliographicRecordKeyType
+     */
+    public function getBibliographicRecordKey()
+    {
+        return $this->BibliographicRecordKey;
+    }
+
+    /**
+     * @param \IMS\Query\Type\BibliographicRecordKeyType $BibliographicRecordKey
+     * @return GetBibrecLifecycleSimulation
+     */
+    public function withBibliographicRecordKey($BibliographicRecordKey)
+    {
+        $new = clone $this;
+        $new->BibliographicRecordKey = $BibliographicRecordKey;
+
+        return $new;
+    }
+
+
+}
+
